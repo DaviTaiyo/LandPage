@@ -1,55 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameZone - lojas de jogos</title>
+    <meta name="description" content="GameZone, uma landing page moderna para divulgar jogos, ofertas e assinatura gamer.">
+    <title>GameZone | Sua prateleira gamer, atualizada toda semana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--Cabeçalho-->
-    <header>
-        <div class="logo">🎮 GameZone</div>
-        <nav>
-            <a href="#produtos">Jogos</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-    <!--Seção de Produtos-->
-    <section id="produtos">
-        <h2>Jogos em Destaque</h2>
-        <div class="produtos-container">
-            <div class="produto">
-                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png" alt="jogo 1">
-                <h3>Cyberpunk 2077</h3>
-                <p>Ação futurista intensa. R$250,00</p>
-            </div>
-            <div class="produto">
-                <img src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2014/08/06/1331669338910_2/cruising-the-med-with-forza-horizon-2" alt="jogo 2">
-                <h3>Forza Horizon</h3>
-                <p>Corrida Realista Esportiva R$200,00</p>
-            </div>
-            <div class="produto">
-                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/02/minecraft-key-art-feature.jpg" alt="jogo 3">
-                <h3>Minecraft</h3>
-                <p>Sobrevivencia criatividade e exploração R$400,00</p>
-            </div>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#topo">GameZone</a>
+            <nav class="site-nav" aria-label="Navegacao principal">
+                <a href="#catalogo">Catalogo</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#assinatura">Assinatura</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-    </section>
-    <!--Contato-->
-    <section id="contato">
-        <h2>Entre em contato</h2>
-        <p>📍 Endereço: Jardim das sombras</p>
-        <p>📧 Email: contato@gamezone.com.br</p>
-        <p>📞 Telefone: (17) 1234-5678</p>
-    </section>
-    <!--Rodapé-->
-    <footer>
-        <p>&copy; 2025 Gamezone. Todos os direitos reservados.</p>
+    </header>
+
+    <main id="topo">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Curadoria gamer para PC e console</p>
+                    <h1>Uma landing page com cara de marca, nao de trabalho abandonado.</h1>
+                    <p class="hero-text">
+                        A GameZone reune lancamentos, selecoes da comunidade e beneficios para quem quer montar
+                        uma biblioteca forte sem perder tempo procurando promocao em toda loja.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#catalogo">Ver destaques</a>
+                        <a class="button button-secondary" href="#assinatura">Conhecer o clube</a>
+                    </div>
+                    <ul class="hero-stats" aria-label="Indicadores da loja">
+                        <li><strong>120+</strong><span>titulos curados</span></li>
+                        <li><strong>48h</strong><span>para novas ofertas</span></li>
+                        <li><strong>4.9/5</strong><span>avaliacao media</span></li>
+                    </ul>
+                </div>
+
+                <div class="hero-panel" aria-label="Painel de destaques da GameZone">
+                    <div class="hero-card hero-card-lg">
+                        <span class="tag">Em alta</span>
+                        <h2>Night Circuit</h2>
+                        <p>Corrida neon, trilha sintetica e campeonatos semanais com ranking ativo.</p>
+                    </div>
+                    <div class="hero-card hero-card-sm">
+                        <span class="tag">Novo drop</span>
+                        <p>Bundles com multiplayer cooperativo e bonus de assinatura.</p>
+                    </div>
+                    <div class="hero-card hero-card-sm accent-card">
+                        <span class="tag">Semana</span>
+                        <p>Descontos especiais para RPG, sandbox e simuladores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogo" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Catalogo em destaque</p>
+                    <h2>Jogos escolhidos para vender bem e apresentar melhor</h2>
+                    <p>
+                        Em vez de apenas listar capas, a pagina agora comunica estilo, preco e categoria com
+                        mais clareza visual.
+                    </p>
+                </div>
+
+                <div class="game-grid">
+                    <article class="game-card">
+                        <div class="game-cover cover-cyber">
+                            <span>CP</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="game-meta">
+                                <span>Acao RPG</span>
+                                <span>PC / PS5 / Xbox</span>
+                            </div>
+                            <h3>Cyberpulse 2077</h3>
+                            <p>Combate intenso, cidade viva e expansao incluida no pacote premium.</p>
+                            <div class="game-footer">
+                                <strong>R$ 199,90</strong>
+                                <a href="#contato">Quero este</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
+                        <div class="game-cover cover-racing">
+                            <span>FH</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="game-meta">
+                                <span>Corrida</span>
+                                <span>4K / Online</span>
+                            </div>
+                            <h3>Forza Horizon Velocity</h3>
+                            <p>Mapa aberto, carros lendarios e eventos semanais com premios exclusivos.</p>
+                            <div class="game-footer">
+                                <strong>R$ 179,90</strong>
+                                <a href="#contato">Reservar</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
+                        <div class="game-cover cover-sandbox">
+                            <span>MC</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="game-meta">
+                                <span>Sandbox</span>
+                                <span>Cross-play</span>
+                            </div>
+                            <h3>MineBlocks Infinite</h3>
+                            <p>Construcao criativa, sobrevivencia e servidores prontos para jogar em grupo.</p>
+                            <div class="game-footer">
+                                <strong>R$ 99,90</strong>
+                                <a href="#contato">Comprar</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Por que esta pagina funciona melhor</p>
+                    <h2>Menos cara de aula, mais cara de produto pronto</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Visual consistente</h3>
+                        <p>Paleta, tipografia e espacos foram organizados para criar identidade visual de verdade.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Texto revisado</h3>
+                        <p>Corrigimos a codificacao quebrada e substituimos frases genericas por copy mais profissional.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Responsivo de fato</h3>
+                        <p>O layout se adapta a telas menores sem quebrar navegacao, cards ou botoes principais.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="assinatura" class="section">
+            <div class="container membership">
+                <div>
+                    <p class="eyebrow">Clube GameZone</p>
+                    <h2>Assinatura mensal para manter a pagina com proposta comercial clara</h2>
+                    <p>
+                        Inclui alertas de preco, selecao editorial, descontos em pre-venda e acesso antecipado
+                        aos bundles do mes.
+                    </p>
+                </div>
+                <div class="membership-card">
+                    <span class="tag">Plano mais pedido</span>
+                    <h3>Level Up</h3>
+                    <p class="price">R$ 24,90 <span>/ mes</span></p>
+                    <ul>
+                        <li>Ofertas privadas toda semana</li>
+                        <li>Wishlist com alerta por WhatsApp</li>
+                        <li>Cupons extras em lancamentos</li>
+                    </ul>
+                    <a class="button button-primary" href="#contato">Assinar agora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section section-contact">
+            <div class="container contact-panel">
+                <div>
+                    <p class="eyebrow">Contato</p>
+                    <h2>Pronto para transformar interesse em venda</h2>
+                    <p>
+                        Se voce quiser, esta pagina ja pode servir como portfolio, vitrine de produto ou base
+                        para uma loja simples.
+                    </p>
+                </div>
+                <div class="contact-list">
+                    <p><strong>Email:</strong> contato@gamezone.com.br</p>
+                    <p><strong>WhatsApp:</strong> +55 (17) 99123-4567</p>
+                    <p><strong>Atendimento:</strong> Segunda a sabado, das 9h as 20h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 GameZone. Landing page reestruturada para portfolio e GitHub.</p>
+            <a href="#topo">Voltar ao topo</a>
+        </div>
     </footer>
-    <!--Botão Flutuante Whatsapp-->
-    <a class="whatsapp-button" href="https://wa.me/551712345678?text=Olá!%20Quero%20saber%20mais%20sobre%20os%20jogos!" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+
+    <a
+        class="whatsapp-button"
+        href="https://wa.me/5517991234567?text=Ola!%20Quero%20saber%20mais%20sobre%20a%20GameZone."
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Falar com a GameZone no WhatsApp"
+    >
+        WA
     </a>
 </body>
 </html>
